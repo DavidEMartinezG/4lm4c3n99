@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Almacén 99</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #000; color: #fff; }
+        .border-steel { border-color: #475569; } /* Slate-600 */
+        .bg-steel { background-color: #1e293b; } /* Slate-800 */
+        .marquee { white-space: nowrap; overflow: hidden; }
+        .marquee div { display: inline-block; animation: marquee 20s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+ 
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="fixed w-full z-[100] bg-black border-b-4 border-steel">
+    <div class="max-w-[1600px] mx-auto px-6 h-24 flex justify-between items-center">
+        
+        <a href="index.html" class="group flex items-center">
+            <div class="bg-slate-100 p-1 border-2 border-white shadow-[5px_5px_0px_0px_rgba(251,191,36,1)] transition-transform group-hover:scale-105">
+                <img src="assets/logo.png" alt="ALMACÉN 99" class="h-8 md:h-20 w-auto brightness-90 contrast-125">
+            </div>
+            <div class="ml-4 hidden lg:block">
+                <p class="text-white font-900 text-xl tracking-tighter leading-none italic">ALMACÉN 99 SA DE CV</p>
+            </div>
+        </a>
+
+        <div class="hidden md:flex gap-1 bg-steel p-1 border border-white/10">
+            <a href="index.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">Inicio</a>
+            <a href="operacion.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">OPERACION</a>
+            <a href="soluciones.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">SOLUCIONES</a>
+            <a href="contacto.html" class="px-6 py-3 bg-amber-400 text-black font-900 uppercase text-[10px] tracking-widest hover:bg-white transition">Contacto</a>
+        </div>
+
+        <button id="open-nav" class="md:hidden bg-steel p-4 text-amber-400 border border-white/20">
+            <i data-lucide="menu-log-out" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <div id="nav-overlay" class="fixed inset-0 bg-black z-[110] translate-x-full transition-transform duration-500 flex flex-col p-10">
+        <div class="flex justify-between items-center mb-20">
+            <span class="text-amber-400 font-900 italic tracking-tighter text-2xl">ALMACEN_99_V1.0</span>
+            <button id="close-nav" class="text-white"><i data-lucide="x" class="w-12 h-12"></i></button>
+        </div>
+        <div class="flex flex-col gap-6">
+            <a href="index.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">Inicio</a>
+            <a href="operacion.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">OPERACION</a>
+            <a href="soluciones.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">SOLUCIONES</a>
+            <a href="contacto.html" class="text-5xl font-900 uppercase italic text-amber-400">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+    <main class="max-w-[1600px] mx-auto px-6 py-20">
+        <div class="grid lg:grid-cols-2 gap-20">
+            <div class="bg-amber-400 text-black p-12">
+                <h1 class="text-6xl font-black uppercase mb-10">Ubicación <br> Sede Saltillo</h1>
+                <div class="space-y-6 font-bold uppercase tracking-widest">
+                    <p>Buenos Aires #571 Int. 3 <br> Col. Latinoamericana <br> CP 25270, Coahuila</p>
+                    <p class="pt-10 border-t border-black/20 text-3xl italic">contacto@almacen99.com.mx</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <form class="space-y-8">
+                    <div class="border-b-2 border-white/20 pb-4">
+                        <input type="text" placeholder="CLIENTE / EMPRESA" class="w-full bg-transparent outline-none uppercase font-black tracking-widest">
+                    </div>
+                    <div class="border-b-2 border-white/20 pb-4">
+                        <input type="email" placeholder="CORREO ELECTRÓNICO" class="w-full bg-transparent outline-none uppercase font-black tracking-widest">
+                    </div>
+                    <div class="border-b-2 border-white/20 pb-4">
+                        <textarea placeholder="PROYECTO O DIVISIÓN DE INTERÉS" rows="4" class="w-full bg-transparent outline-none uppercase font-black tracking-widest"></textarea>
+                    </div>
+                    <button class="bg-white text-black font-black px-12 py-6 uppercase italic hover:bg-amber-400 transition">Enviar Transmisión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-steel py-10 px-6">
+        <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 opacity-40">
+            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Almacén 99 © 2026</span>
+            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Hecho en Saltillo, MX</span>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+    const openNav = document.getElementById('open-nav');
+    const closeNav = document.getElementById('close-nav');
+    const navOverlay = document.getElementById('nav-overlay');
+
+    openNav.onclick = () => navOverlay.classList.remove('translate-x-full');
+    closeNav.onclick = () => navOverlay.classList.add('translate-x-full');
+    </script>
+</body>
+</html>

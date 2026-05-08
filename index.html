@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALMACÉN 99</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #000; color: #fff; }
+        .border-steel { border-color: #475569; } /* Slate-600 */
+        .bg-steel { background-color: #1e293b; } /* Slate-800 */
+        .marquee { white-space: nowrap; overflow: hidden; }
+        .marquee div { display: inline-block; animation: marquee 20s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="fixed w-full z-[100] bg-black border-b-4 border-steel">
+    <div class="max-w-[1600px] mx-auto px-6 h-24 flex justify-between items-center">
+        
+        <a href="index.html" class="group flex items-center">
+            <div class="bg-slate-100 p-1 border-2 border-white shadow-[5px_5px_0px_0px_rgba(251,191,36,1)] transition-transform group-hover:scale-105">
+                <img src="assets/logo.png" alt="ALMACÉN 99" class="h-8 md:h-20 w-auto brightness-90 contrast-125">
+            </div>
+            <div class="ml-4 hidden lg:block">
+                <p class="text-white font-900 text-xl tracking-tighter leading-none italic">ALMACÉN 99 SA DE CV</p>
+            </div>
+        </a>
+
+        <div class="hidden md:flex gap-1 bg-steel p-1 border border-white/10">
+            <a href="index.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">Inicio</a>
+            <a href="operacion.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">OPERACION</a>
+            <a href="soluciones.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">SOLUCIONES</a>
+            <a href="contacto.html" class="px-6 py-3 bg-amber-400 text-black font-900 uppercase text-[10px] tracking-widest hover:bg-white transition">Contacto</a>
+        </div>
+
+        <button id="open-nav" class="md:hidden bg-steel p-4 text-amber-400 border border-white/20">
+            <i data-lucide="menu-log-out" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <div id="nav-overlay" class="fixed inset-0 bg-black z-[110] translate-x-full transition-transform duration-500 flex flex-col p-10">
+        <div class="flex justify-between items-center mb-20">
+            <span class="text-amber-400 font-900 italic tracking-tighter text-2xl">ALMACEN_99_V1.0</span>
+            <button id="close-nav" class="text-white"><i data-lucide="x" class="w-12 h-12"></i></button>
+        </div>
+        <div class="flex flex-col gap-6">
+            <a href="index.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">Inicio</a>
+            <a href="operacion.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">OPERACION</a>
+            <a href="soluciones.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">SOLUCIONES</a>
+            <a href="contacto.html" class="text-5xl font-900 uppercase italic text-amber-400">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+
+
+    
+<section class="min-h-screen pt-48 px-6 flex flex-col justify-between overflow-hidden">
+    <div class="max-w-[1600px] mx-auto w-full">
+        <h1 class="text-[12vw] font-900 leading-[0.75] uppercase tracking-tighter italic text-slate-300">
+            SOLUCIONES<br><span class="text-amber-400">SOLIDAS</span> <br> 
+        </h1>
+        
+        <div class="grid md:grid-cols-3 mt-20 border-t-4 border-steel pt-10 gap-10">
+            <p class="text-slate-500 uppercase text-[10px] tracking-[0.3em] font-black">
+                <span class="text-white block mb-2">01 / INDUSTRIA</span>
+                Suministro, fabricación y distribución de materiales y productos industriales. Metales, ferretería, herramientas y soluciones para operación.
+            </p>
+            <p class="text-slate-500 uppercase text-[10px] tracking-[0.3em] font-black">
+                <span class="text-white block mb-2">02 / TECNOLOGIA</span>
+                Equipos, soporte y soluciones tecnológicas. Cómputo, multimedia, TI y sistemas de seguridad conectados.
+            </p>
+            <p class="text-slate-500 uppercase text-[10px] tracking-[0.3em] font-black">
+                <span class="text-white block mb-2">03 / CREATIVE</span>
+                Publicidad, contenido y estrategias de mercado. Producción audiovisual, medios y comunicación comercial.
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="relative flex overflow-x-hidden border-y-2 border-steel bg-steel py-8 mt-20">
+        <div class="animate-marquee whitespace-nowrap flex font-900 text-3xl uppercase italic text-slate-300">
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+        </div>
+
+        
+        <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex font-900 text-3xl uppercase italic text-slate-300 py-8">
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+            <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
+        </div>
+    </div>
+</section>
+<footer class="border-t border-steel py-10 px-6">
+        <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 opacity-40">
+            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Almacén 99 © 2026</span>
+            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Hecho en Saltillo, MX</span>
+        </div>
+    </footer>
+
+<!-- ESTILOS CSS PARA EL MARQUEE INFINITO -->
+<style>
+    @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    @keyframes marquee2 {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(0%); }
+    }
+
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+    }
+
+    .animate-marquee2 {
+        animation: marquee2 30s linear infinite;
+    }
+
+    /* Para que se detenga al pasar el mouse (opcional) */
+    .relative:hover .animate-marquee,
+    .relative:hover .animate-marquee2 {
+        animation-play-state: paused;
+    }
+</style>
+
+    <script>
+    lucide.createIcons();
+    const openNav = document.getElementById('open-nav');
+    const closeNav = document.getElementById('close-nav');
+    const navOverlay = document.getElementById('nav-overlay');
+
+    openNav.onclick = () => navOverlay.classList.remove('translate-x-full');
+    closeNav.onclick = () => navOverlay.classList.add('translate-x-full');
+</script>
+</body>
+</html>

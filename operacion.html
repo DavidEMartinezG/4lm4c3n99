@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACION | ALMACÉN 99</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #000; color: #fff; }
+        .border-steel { border-color: #475569; }
+        .bg-steel { background-color: #1e293b; }
+        .text-outline { -webkit-text-stroke: 1px #475569; color: transparent; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="fixed w-full z-[100] bg-black border-b-4 border-steel">
+    <div class="max-w-[1600px] mx-auto px-6 h-24 flex justify-between items-center">
+        
+        <a href="index.html" class="group flex items-center">
+            <div class="bg-slate-100 p-1 border-2 border-white shadow-[5px_5px_0px_0px_rgba(251,191,36,1)] transition-transform group-hover:scale-105">
+                <img src="assets/logo.png" alt="ALMACÉN 99" class="h-8 md:h-20 w-auto brightness-90 contrast-125">
+            </div>
+            <div class="ml-4 hidden lg:block">
+                <p class="text-white font-900 text-xl tracking-tighter leading-none italic">ALMACÉN 99 SA DE CV</p>
+            </div>
+        </a>
+
+        <div class="hidden md:flex gap-1 bg-steel p-1 border border-white/10">
+            <a href="index.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">Inicio</a>
+            <a href="operacion.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">OPERACION</a>
+            <a href="soluciones.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">SOLUCIONES</a>
+            <a href="contacto.html" class="px-6 py-3 bg-amber-400 text-black font-900 uppercase text-[10px] tracking-widest hover:bg-white transition">Contacto</a>
+        </div>
+
+        <button id="open-nav" class="md:hidden bg-steel p-4 text-amber-400 border border-white/20">
+            <i data-lucide="menu-log-out" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <div id="nav-overlay" class="fixed inset-0 bg-black z-[110] translate-x-full transition-transform duration-500 flex flex-col p-10">
+        <div class="flex justify-between items-center mb-20">
+            <span class="text-amber-400 font-900 italic tracking-tighter text-2xl">ALMACEN_99_V1.0</span>
+            <button id="close-nav" class="text-white"><i data-lucide="x" class="w-12 h-12"></i></button>
+        </div>
+        <div class="flex flex-col gap-6">
+            <a href="index.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">Inicio</a>
+            <a href="operacion.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">OPERACION</a>
+            <a href="soluciones.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">SOLUCIONES</a>
+            <a href="contacto.html" class="text-5xl font-900 uppercase italic text-amber-400">Contacto</a>
+        </div>
+    </div>
+</nav> 
+<main class="max-w-[1600px] mx-auto px-4 md:px-6 pt-32 md:pt-48 pb-20">
+        
+        <!-- HEADER -->
+        <header class="mb-16 md:mb-32">
+            
+            <!-- Tamaño adaptativo: text-6xl en móvil, 12vw en desktop -->
+            <h1 class="text-5xl md:text-7xl lg:text-[12vw] font-900 uppercase leading-[0.9] italic mb-8 md:mb-10">
+                Núcleo <br> <span class="">Operativo</span>
+            </h1>
+            <p class="max-w-3xl text-slate-400 font-bold uppercase tracking-widest text-xs md:text-sm leading-loose border-l-4 md:border-l-8 border-steel pl-4 md:pl-8">
+                Almacén 99 es un ecosistema de suministro y soluciones técnicas diseñado para responder a la demanda industrial de Saltillo y el mercado global.
+            </p>
+        </header>
+
+            
+    </main>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-px bg-steel border-2 border-steel mb-32">
+            <div class="bg-black p-12">
+                <i data-lucide="wrench" class="w-12 h-12 text-amber-400 mb-6"></i>
+                <h3 class="text-2xl font-900 uppercase italic mb-4">Taller & Frío</h3>
+                <p class="text-[10px] text-slate-500 font-bold tracking-[0.2em] uppercase leading-relaxed">
+                    Operamos tornos convencionales, soldadura especializada y centros de maquinado para la transformación de metales.
+                </p>
+            </div>
+            <div class="bg-zinc-900 p-12">
+                <i data-lucide="server" class="w-12 h-12 text-amber-400 mb-6"></i>
+                <h3 class="text-2xl font-900 uppercase italic mb-4">Laboratorio TI</h3>
+                <p class="text-[10px] text-slate-500 font-bold tracking-[0.2em] uppercase leading-relaxed">
+                    Estaciones de diagnóstico, configuración de servidores y laboratorios de pruebas para sistemas de videovigilancia.
+                </p>
+            </div>
+            <div class="bg-black p-12">
+                <i data-lucide="camera" class="w-12 h-12 text-amber-400 mb-6"></i>
+                <h3 class="text-2xl font-900 uppercase italic mb-4">Studio Core</h3>
+                <p class="text-[10px] text-slate-500 font-bold tracking-[0.2em] uppercase leading-relaxed">
+                    Unidad de producción equipada para captura de alta resolución, post-producción y despliegue de marketing.
+                </p>
+            </div>
+        </section>
+
+        <!-- FILOSOFÍA DE SISTEMA -->
+        <section class="border-t-4 border-steel pt-20">
+            <h2 class="text-5xl font-900 uppercase italic mb-16">Metodología <span class="text-outline text-slate-600" style="-webkit-text-stroke: 1px #475569; color: transparent;">A99</span></h2>
+            <div class="grid md:grid-cols-2 gap-20">
+                <div class="space-y-12">
+                    <div class="flex gap-6">
+                        <span class="text-amber-400 font-900 text-3xl">/01</span>
+                        <div>
+                            <h5 class="font-black uppercase tracking-widest text-sm mb-2">Análisis de Estrés</h5>
+                            <p class="text-xs text-slate-500 uppercase leading-relaxed">Ponemos a prueba cada requerimiento antes de la ejecución para garantizar el éxito operativo.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="text-amber-400 font-900 text-3xl">/02</span>
+                        <div>
+                            <h5 class="font-black uppercase tracking-widest text-sm mb-2">Despliegue Técnico</h5>
+                            <p class="text-xs text-slate-500 uppercase leading-relaxed">El uso de herramientas de vanguardia asegura que cada pieza o cableado cumpla con la norma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-amber-400 text-black p-12 font-900 flex flex-col justify-between">
+                    <p class="text-3xl uppercase italic leading-none">Nuestra operación no descansa porque la industria no se detiene.</p>
+                    <span class="text-[10px] tracking-[0.5em] mt-10">ALMACÉN 99 SYSTEM v2.0</span>
+                </div>
+            </div>
+        </section>
+    <footer class="border-t border-steel py-10 px-6">
+        <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 opacity-40">
+            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Almacén 99 © 2026</span>
+            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Hecho en Saltillo, MX</span>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const openNav = document.getElementById('open-nav');
+        const closeNav = document.getElementById('close-nav');
+        const navOverlay = document.getElementById('nav-overlay');
+
+        // Funciones de apertura y cierre
+        openNav.onclick = () => {
+            navOverlay.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden'; // Evita scroll al estar el menú abierto
+        };
+        closeNav.onclick = () => {
+            navOverlay.classList.add('translate-x-full');
+            document.body.style.overflow = 'auto';
+        };
+        // Cerrar al hacer click en un link (útil en móviles)
+        document.querySelectorAll('#nav-overlay a').forEach(link => {
+            link.onclick = () => {
+                navOverlay.classList.add('translate-x-full');
+                document.body.style.overflow = 'auto';
+            };
+        });
+    </script>
+    </script>
+
+</body>
+</html>
