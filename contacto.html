@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #000; color: #fff; }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #797979; color: #fff; }
         .border-steel { border-color: #475569; }
         .bg-steel { background-color: #1e293b; }
         .text-outline { -webkit-text-stroke: 1px #fbbf24; color: transparent; }
@@ -57,8 +57,9 @@
         <!-- Tarjeta de Contacto Centrada -->
         <div class="w-full max-w-4xl">
             <header class="mb-12">
-                <h1 class="text-6xl md:text-8xl font-900 uppercase italic leading-none">Canal <br> <span class="text-amber-400">Directo</span></h1>
-                <p class="text-slate-500 font-black uppercase tracking-[0.4em] text-xs mt-4 italic">// Enlace de respuesta inmediata</p>
+                <!-- Adaptado text-black para contraste sobre gris -->
+                <h1 class="text-6xl md:text-8xl font-900 uppercase italic leading-none text-black">Canal <br> <span class="text-amber-400">Directo</span></h1>
+                <p class="text-black font-black uppercase tracking-[0.4em] text-xs mt-4 italic">// Enlace de respuesta inmediata</p>
             </header>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-1 bg-steel border-4 border-steel shadow-[15px_15px_0px_0px_rgba(251,191,36,0.2)]">
@@ -110,7 +111,8 @@
 <section class="max-w-4xl mx-auto mt-20 mb-20 px-0">
     <div class="mb-4 flex justify-between items-end uppercase font-900 italic">
         <span class="text-amber-400 text-xs tracking-[0.5em]">// Coordenadas_Sede</span>
-        <span class="text-slate-600 text-[10px] tracking-widest">25.4484° N, 100.9665° W</span>
+        <!-- Adaptado a text-black para lectura sobre el gris -->
+        <span class="text-black text-[10px] tracking-widest font-bold">25.4484° N, 100.9665° W</span>
     </div>
     
     <div class="border-4 border-steel bg-steel p-1 shadow-[10px_10px_0px_0px_rgba(71,85,105,0.3)]">
@@ -130,7 +132,8 @@
     </main>
 
     <footer class="border-t-4 border-steel py-10 px-6 mt-20">
-        <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 opacity-40 text-[10px] font-black uppercase tracking-[0.5em]">
+        <!-- Adaptado text-black para que la opacidad no borre el texto en el fondo gris -->
+        <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 opacity-40 text-[10px] font-black text-black uppercase tracking-[0.5em]">
             <span>Almacén 99 © 2026</span>
             <span>Hecho en Saltillo, MX</span>
         </div>

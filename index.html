@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #000; color: #fff; }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #797979; color: #fff; }
         .border-steel { border-color: #475569; } /* Slate-600 */
         .bg-steel { background-color: #1e293b; } /* Slate-800 */
         .marquee { white-space: nowrap; overflow: hidden; }
@@ -55,42 +55,40 @@
     </div>
 </nav>
 
-
-
-    
 <section class="min-h-screen pt-48 px-6 flex flex-col justify-between overflow-hidden">
     <div class="max-w-[1600px] mx-auto w-full">
-        <h1 class="text-[12vw] font-900 leading-[0.75] uppercase tracking-tighter italic text-slate-300">
-            SOLUCIONES<br><span class="text-amber-400">SOLIDAS</span> <br> 
+        <!-- Texto adaptado de slate-300 a BLACK para contraste sobre gris -->
+        <h1 class="text-[12vw] font-900 leading-[0.75] uppercase tracking-tighter italic text-black">
+            PRODUCTOS CON<br><span class="text-amber-400">OPORTUNIDADES</span> <br> 
         </h1>
         
         <div class="grid md:grid-cols-3 mt-20 border-t-4 border-steel pt-10 gap-10">
-            <p class="text-slate-500 uppercase text-[10px] tracking-[0.3em] font-black">
+            <!-- Texto adaptado de slate-500 a ZINC-900 para legibilidad -->
+            <p class="text-zinc-900 uppercase text-[10px] tracking-[0.3em] font-black">
                 <span class="text-white block mb-2">01 / INDUSTRIA</span>
                 Suministro, fabricación y distribución de materiales y productos industriales. Metales, ferretería, herramientas y soluciones para operación.
             </p>
-            <p class="text-slate-500 uppercase text-[10px] tracking-[0.3em] font-black">
+            <p class="text-zinc-900 uppercase text-[10px] tracking-[0.3em] font-black">
                 <span class="text-white block mb-2">02 / TECNOLOGIA</span>
                 Equipos, soporte y soluciones tecnológicas. Cómputo, multimedia, TI y sistemas de seguridad conectados.
             </p>
-            <p class="text-slate-500 uppercase text-[10px] tracking-[0.3em] font-black">
+            <p class="text-zinc-900 uppercase text-[10px] tracking-[0.3em] font-black">
                 <span class="text-white block mb-2">03 / CREATIVE</span>
                 Publicidad, contenido y estrategias de mercado. Producción audiovisual, medios y comunicación comercial.
             </p>
         </div>
     </div>
 
-    
-    <div class="relative flex overflow-x-hidden border-y-2 border-steel bg-steel py-8 mt-20">
-        <div class="animate-marquee whitespace-nowrap flex font-900 text-3xl uppercase italic text-slate-300">
+    <!-- Marquee adaptado de slate-300 a BLACK -->
+    <div class="relative flex overflow-x-hidden border-y-2 border-steel bg-black py-8 mt-20">
+        <div class="animate-marquee whitespace-nowrap flex font-900 text-3xl uppercase italic text-white">
             <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
             <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
             <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
             <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
         </div>
 
-        
-        <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex font-900 text-3xl uppercase italic text-slate-300 py-8">
+        <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex font-900 text-3xl uppercase italic text-white py-8">
             <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
             <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
             <span class="mx-4">ALMACÉN 99 • SALTILLO • MÉXICO • IMPORT • EXPORT • INDUSTRIAL • TECH • MEDIA •</span>
@@ -98,14 +96,15 @@
         </div>
     </div>
 </section>
+
 <footer class="border-t border-steel py-10 px-6">
         <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 opacity-40">
-            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Almacén 99 © 2026</span>
-            <span class="text-[10px] font-black uppercase tracking-[0.5em]">Hecho en Saltillo, MX</span>
+            <!-- Footer adaptado a BLACK para visibilidad -->
+            <span class="text-[10px] font-black text-black uppercase tracking-[0.5em]">Almacén 99 © 2026</span>
+            <span class="text-[10px] font-black text-black uppercase tracking-[0.5em]">Hecho en Saltillo, MX</span>
         </div>
     </footer>
 
-<!-- ESTILOS CSS PARA EL MARQUEE INFINITO -->
 <style>
     @keyframes marquee {
         0% { transform: translateX(0%); }
@@ -125,7 +124,6 @@
         animation: marquee2 30s linear infinite;
     }
 
-    /* Para que se detenga al pasar el mouse (opcional) */
     .relative:hover .animate-marquee,
     .relative:hover .animate-marquee2 {
         animation-play-state: paused;
