@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICIOS | ALMACÉN 99 Y MÁS</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #797979; color: #fff; }
+        .border-steel { border-color: #475569; }
+        .bg-steel { background-color: #1e293b; }
+        .text-outline { -webkit-text-stroke: 1px #000000; color: transparent; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="fixed w-full z-[100] bg-black border-b-4 border-steel">
+    <div class="max-w-[1600px] mx-auto px-6 h-24 flex justify-between items-center">
+        
+        <a href="index.html" class="group flex items-center">
+            <div class="bg-slate-100 p-1 border-2 border-white shadow-[5px_5px_0px_0px_rgba(251,191,36,1)] transition-transform group-hover:scale-105">
+                <img src="assets/logo.png" alt="ALMACÉN 99 Y MÁS" class="h-8 md:h-20 w-auto brightness-90 contrast-125">
+            </div>
+            <div class="ml-4 hidden lg:block">
+                <p class="text-white font-900 text-xl tracking-tighter leading-none italic">ALMACÉN 99 Y MÁS SA DE CV</p>
+            </div>
+        </a>
+
+        <div class="hidden md:flex gap-1 bg-steel p-1 border border-white/10">
+            <a href="index.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">Inicio</a>
+            <a href="productos.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">PRODUCTOS</a>
+            <a href="servicios.html" class="px-6 py-3 hover:bg-white hover:text-black transition font-900 uppercase text-[10px] tracking-widest">SERVICIOS</a>
+            <a href="contacto.html" class="px-6 py-3 bg-amber-400 text-black font-900 uppercase text-[10px] tracking-widest hover:bg-white transition">Contacto</a>
+        </div>
+
+        <button id="open-nav" class="md:hidden bg-steel p-4 text-amber-400 border border-white/20">
+            <i data-lucide="menu-log-out" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <div id="nav-overlay" class="fixed inset-0 bg-black z-[110] translate-x-full transition-transform duration-500 flex flex-col p-10">
+        <div class="flex justify-between items-center mb-20">
+            <span class="text-amber-400 font-900 italic tracking-tighter text-2xl">ALMACEN_99_Y_MAS_V2.0</span>
+            <button id="close-nav" class="text-white"><i data-lucide="x" class="w-12 h-12"></i></button>
+        </div>
+        <div class="flex flex-col gap-6">
+            <a href="index.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">Inicio</a>
+            <a href="productos.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">PRODUCTOS</a>
+            <a href="servicios.html" class="text-5xl font-900 uppercase italic hover:text-amber-400 transition">SERVICIOS</a>
+            <a href="contacto.html" class="text-5xl font-900 uppercase italic text-amber-400">Contacto</a>
+        </div>
+    </div>
+</nav> 
+
+<main class="max-w-[1600px] mx-auto px-4 md:px-6 pt-32 md:pt-48 pb-20">
+        
+        <!-- HEADER -->
+        <header class="mb-16 md:mb-32">
+            <h1 class="text-5xl md:text-7xl lg:text-[11vw] font-900 uppercase leading-[0.9] italic mb-8 md:mb-10 text-black">
+                GESTIÓN <br> <span class="text-amber-400">LOGÍSTICA</span>
+            </h1>
+            <p class="max-w-3xl text-black font-bold uppercase tracking-widest text-xs md:text-sm leading-loose border-l-4 md:border-l-8 border-steel pl-4 md:pl-8">
+                Proporcionamos servicios especializados de auditoría, administración de bodegas y control de inventarios diseñados para optimizar los procesos operativos y logísticos de su empresa.
+            </p>
+        </header>
+
+    </main>
+
+    <!-- PILARES DE SERVICIO -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-px bg-steel border-2 border-steel mb-32 max-w-[1600px] mx-auto">
+            <div class="bg-black p-12">
+                <i data-lucide="clipboard-check" class="w-12 h-12 text-amber-400 mb-6"></i>
+                <h3 class="text-2xl font-900 uppercase italic mb-4">Auditoría</h3>
+                <p class="text-[10px] text-slate-400 font-bold tracking-[0.2em] uppercase leading-relaxed">
+                    Levantamiento físico, validación de inventarios y reportes detallados para mantener un control preciso de sus existencias.
+                </p>
+            </div>
+            <div class="bg-zinc-900 p-12">
+                <i data-lucide="boxes" class="w-12 h-12 text-amber-400 mb-6"></i>
+                <h3 class="text-2xl font-900 uppercase italic mb-4">Control</h3>
+                <p class="text-[10px] text-slate-400 font-bold tracking-[0.2em] uppercase leading-relaxed">
+                    Organización, clasificación de mercancías y gestión estricta de entradas y salidas para evitar mermas operativas.
+                </p>
+            </div>
+            <div class="bg-black p-12">
+                <i data-lucide="building-2" class="w-12 h-12 text-amber-400 mb-6"></i>
+                <h3 class="text-2xl font-900 uppercase italic mb-4">Administración</h3>
+                <p class="text-[10px] text-slate-400 font-bold tracking-[0.2em] uppercase leading-relaxed">
+                    Implementación de procesos administrativos y supervisión operativa en sitio para maximizar la eficiencia de sus bodegas.
+                </p>
+            </div>
+        </section>
+
+        <!-- FILOSOFÍA DE SISTEMA -->
+        <section class="border-t-4 border-steel pt-20 px-6 max-w-[1600px] mx-auto mb-32">
+            <h2 class="text-5xl font-900 uppercase italic mb-16 text-black">Metodología <span class="text-outline text-black">A99</span></h2>
+            <div class="grid md:grid-cols-2 gap-20">
+                <div class="space-y-12">
+                    <div class="flex gap-6">
+                        <span class="text-amber-400 font-900 text-3xl">/01</span>
+                        <div>
+                            <h5 class="font-black uppercase tracking-widest text-sm mb-2 text-black">Diagnóstico en Sitio</h5>
+                            <p class="text-xs text-zinc-900 uppercase leading-relaxed font-bold">Analizamos el estado actual de su almacén para detectar áreas de oportunidad, mermas y discrepancias en su catálogo.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="text-amber-400 font-900 text-3xl">/02</span>
+                        <div>
+                            <h5 class="font-black uppercase tracking-widest text-sm mb-2 text-black">Optimización Logística</h5>
+                            <p class="text-xs text-zinc-900 uppercase leading-relaxed font-bold">Implementamos sistemas de clasificación y procesos administrativos que garantizan un flujo de recursos rápido y sin errores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-amber-400 text-black p-12 font-900 flex flex-col justify-between">
+                    <p class="text-3xl md:text-4xl uppercase italic leading-none">Mejoramos la gestión de sus recursos para que su industria nunca se detenga.</p>
+                    <span class="text-[10px] tracking-[0.5em] mt-10">ALMACÉN 99 Y MÁS SYSTEM v2.0</span>
+                </div>
+            </div>
+        </section>
+
+    <footer class="border-t border-steel py-10 px-6">
+        <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 opacity-40">
+            <span class="text-[10px] font-black text-black uppercase tracking-[0.5em]">Almacén 99 y Más © 2026</span>
+            <span class="text-[10px] font-black text-black uppercase tracking-[0.5em]">Hecho en Saltillo, MX</span>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const openNav = document.getElementById('open-nav');
+        const closeNav = document.getElementById('close-nav');
+        const navOverlay = document.getElementById('nav-overlay');
+
+        openNav.onclick = () => {
+            navOverlay.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+        };
+        closeNav.onclick = () => {
+            navOverlay.classList.add('translate-x-full');
+            document.body.style.overflow = 'auto';
+        };
+        document.querySelectorAll('#nav-overlay a').forEach(link => {
+            link.onclick = () => {
+                navOverlay.classList.add('translate-x-full');
+                document.body.style.overflow = 'auto';
+            };
+        });
+    </script>
+</body>
+</html>
